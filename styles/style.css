@@ -59,13 +59,7 @@ footer ul {
   align-items: center;
   margin-bottom: 40px;
   border-radius: 5px;
-  background-image: linear-gradient(
-    to bottom,
-    #8d8c8c,
-    #717171 50%,
-    #5e5e5e 50%,
-    #777
-  );
+  background-image: linear-gradient(to bottom, #8d8c8c, #717171 50%, #5e5e5e 50%, #777);
 }
 
 .sub-section * {
@@ -101,13 +95,7 @@ footer ul li:not(:last-child) {
 .main-section nav ul li:not(:last-child):hover {
   display: flex;
   align-items: center;
-  background-image: linear-gradient(
-    to bottom,
-    #444343,
-    #6b6b6b 50%,
-    #585858 50%,
-    #3a3a3a
-  );
+  background-image: linear-gradient( to bottom, #444343, #6b6b6b 50%, #585858 50%, #3a3a3a);
 }
 
 .main-section nav li:last-child input {
