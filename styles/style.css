@@ -22,7 +22,8 @@ body {
 
 .grid-container {
   display: grid;
-  /* grid-template-rows: 500px 2fr 1fr; */
+  width: 100%;
+  margin: 0 auto;
 }
 
 /************************************** Main************************************ */
@@ -30,18 +31,24 @@ body {
 .main-section {
   text-align: center;
   width: 100%;
-  height: 83vh;
+  height: 550px;
   background: url(/assets/img/background-img.jpg) 50% 100% no-repeat;
 }
 
-.main-section > div {
+.main-section div {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-
   margin: 0 auto;
   padding-top: 70px;
+}
+
+footer ul {
+  display: flex;
+  color: #08c;
+  text-align: center;
+  justify-content: space-between;
 }
 
 .main-section nav ul {
@@ -52,18 +59,21 @@ body {
   align-items: center;
   margin-bottom: 40px;
   border-radius: 5px;
-  background-image: linear-gradient(
-    to bottom,
-    #8d8c8c,
-    #717171 50%,
-    #5e5e5e 50%,
-    #777777
-  );
+  background-image: linear-gradient(to bottom, #8d8c8c, #717171 50%, #5e5e5e 50%, #777);
+}
+
+.sub-section * {
+  flex: 1;
+  padding: 1px 1px 1px 0;
+}
+
+.main-section .container > * {
+  line-height: 40px;
 }
 
 .main-section nav ul > *:not(:last-child) {
   width: 105px;
-  border-right: 0.5px rgba(41, 38, 38, 0.425) solid;
+  border-right: 0.5px #2926266c solid;
 }
 
 .main-section nav ul li {
@@ -71,21 +81,21 @@ body {
   justify-content: center;
 }
 
-.main-section nav ul li:not(:last-child):hover {
-  display: flex;
-  align-items: center;
-  background-image: linear-gradient(
-    to bottom,
-    #444343,
-    #6b6b6b 50%,
-    #585858 50%,
-    #3a3a3a
-  );
+footer ul li:not(:last-child) {
+  border-right: 1px solid rgb(129, 127, 127);
+  height: 100%;
+  padding-right: 2px;
 }
 
 .main-section nav li:last-child {
   position: relative;
   padding: 15px 25px;
+}
+
+.main-section nav ul li:not(:last-child):hover {
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(to bottom, #444343, #6b6b6b 50%, #585858 50%, #3a3a3a);
 }
 
 .main-section nav li:last-child input {
@@ -104,6 +114,14 @@ body {
   left: 32px;
 }
 
+footer a {
+  color: #08c;
+  text-decoration: none;
+  font-size: 12px;
+  padding: 2px;
+  height: 100%;
+}
+
 .main-section nav ul li a {
   border-right: 0.5px rgba(41, 38, 38, 0.425) solid;
   width: 100%;
@@ -116,35 +134,33 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
 }
-.main-section .container > * {
-  line-height: 40px;
-}
+
 .main-section .container h1 {
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
   margin: 30px 0 20px;
   font-size: 60px;
   font-weight: 200;
 }
+
 .main-section .container h2 {
   margin: 20px 0;
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
   font-weight: 400;
 }
+
 .main-section .container > a {
   color: white;
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
   font-size: 20px;
   text-decoration: none;
 }
+
 /* sub-section */
 
 main .sub-section {
   display: flex;
   justify-content: space-between;
-}
-.sub-section * {
-  flex: 1;
-  padding: 1px 1px 1px 0;
+  margin: 0 auto;
 }
 
 .sub-section div img {
@@ -152,35 +168,25 @@ main .sub-section {
 }
 
 /* footer */
-footer > * {
-}
 
 footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  background-color: wheat;
   gap: 10px;
-  margin: 0 200px;
+  margin: 20px auto;
   font-size: 12px;
 }
 
-footer ul {
+footer p {
+  color: #6e6e6e;
+}
+
+.footer-top {
   display: flex;
-  color: #0088cc;
-  text-align: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
-footer ul li a {
-  color: #0088cc;
-  text-decoration: none;
-  font-size: 12px;
-  padding: 2px;
-  height: 100%;
-}
-footer ul li {
-  height: 100%;
-}
-footer ul li a:not(:last-child) {
-  border-right: 1px solid rgb(129, 127, 127);
+footer .footer-bottom {
+  display: flex;
+  align-items: center;
 }
