@@ -95,7 +95,7 @@ footer ul li:not(:last-child) {
 .main-section nav ul li:not(:last-child):hover {
   display: flex;
   align-items: center;
-  background-image: linear-gradient( to bottom, #444343, #6b6b6b 50%, #585858 50%, #3a3a3a);
+  background-image: linear-gradient(to bottom, #444343, #6b6b6b 50%, #585858 50%, #3a3a3a);
 }
 
 .main-section nav li:last-child input {
