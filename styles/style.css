@@ -1,17 +1,91 @@
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+ /******************************* --RESET-- ************************ */
 
-.flex {
-  display: flex;
-}
+ *,
+ *::before,
+ *::after {
+   margin: 0;
+   padding: 0;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+ }
 
-.flex-center {
-  justify-content: center;
-}
+ ul {
+   list-style-type: none;
+ }
 
-.flex-column {
-  flex-direction: column;
-}
+
+ /************************************** Global****************************** */
+
+ body {
+   color: white;
+ }
+
+ .grid-container {
+   display: grid;
+   /* grid-template-rows: 500px 2fr 1fr; */
+ }
+
+ /* main */
+
+ main .main-section {
+   text-align: center; 
+   width: 100%;
+   height: 80vh;
+   background: url(/assets/img/background-img.jpg) 50% 100% no-repeat;
+ }
+
+
+ main .main-section nav ul{
+
+   width: 600px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 30px;
+   border: 1px solid black;
+   background-color: #ccc;
+ }
+
+ main .main-section nav ul > *{
+   padding: 0 30px;
+   border: 1px solid black;
+ }
+
+ main .main-section nav input{
+   padding: 5px 20px;
+   border-radius: 30px;
+ }
+
+ main .main-section nav ul li:not(:last-child){
+   margin-right: 10px;
+ }
+
+ main .main-section nav ul li:last-child{
+   position: relative;
+ }
+
+ main .main-section nav ul li:last-child i{
+   color: black;
+   position: absolute;
+   top: 7px;
+   left: 4px;
+ }
+
+ /* sub-section */
+ 
+ main .sub-section {
+   display: flex;
+   justify-content: space-between;
+   background-color: blue;
+ }
+
+ .sub-section div img {
+   width: 30px;
+ }
+
+/* footer */
+
+ footer {
+   background-color: chartreuse;
+ }
